@@ -34,26 +34,9 @@ Retorna a conversão de um valor específico da moeda desejada para o Real Brasi
   "valorConvertido": 512.00
 }
 
-Exemplo de Resposta (Erro - 400 Bad Request):
+## ❌ Exemplo de Resposta (Erro - 400 Bad Request)
 
-JSON
+```json
 {
   "erro": "Moeda inválida ou não suportada"
 }
-💻 Como rodar o projeto localmente
-Clone este repositório:
-
-Bash
-git clone [https://github.com/SEU_USUARIO/api-casa-de-cambio.git](https://github.com/SEU_USUARIO/api-casa-de-cambio.git)
-Instale as dependências:
-
-Bash
-npm install
-Crie um arquivo .env na raiz do projeto e defina a porta do servidor:
-
-Plaintext
-PORTA_SERVIDOR=3000
-Inicie o servidor:
-
-Bash
-npx ts-node server.ts
