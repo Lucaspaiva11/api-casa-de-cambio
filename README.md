@@ -4,28 +4,32 @@ Uma API RESTful desenvolvida em Node.js e TypeScript que realiza conversões de 
 
 ## 🚀 Tecnologias Utilizadas
 
-* **Node.js** & **Express**: Construção do servidor web e roteamento.
-* **TypeScript**: Tipagem estática para maior segurança no código.
-* **Axios**: Cliente HTTP para consumir APIs externas.
-* **Dotenv**: Gerenciamento de variáveis de ambiente.
-* **Programação Orientada a Objetos (POO)**: Regras de negócio isoladas em classes.
+- **Node.js** & **Express**: Construção do servidor web e roteamento.
+- **TypeScript**: Tipagem estática para maior segurança no código.
+- **Axios**: Cliente HTTP para consumir APIs externas.
+- **Dotenv**: Gerenciamento de variáveis de ambiente.
+- **Programação Orientada a Objetos (POO)**: Regras de negócio isoladas em classes.
 
 ## ⚙️ Funcionalidades
 
-* Consulta de cotações de moedas estrangeiras em tempo real.
-* Cálculo matemático de conversão baseado no valor fornecido pelo usuário.
-* Tratamento de exceções e erros para moedas não suportadas.
+- Consulta de cotações de moedas estrangeiras em tempo real.
+- Cálculo matemático de conversão baseado no valor fornecido pelo usuário.
+- Tratamento de exceções e erros para moedas não suportadas.
 
-## 🛣️ Como usar a API (Endpoints)
+## 🛣️ Endpoints
 
 ### `GET /converter/:moeda/:valor`
 
 Retorna a conversão de um valor específico da moeda desejada para o Real Brasileiro (BRL).
 
 **Exemplo de Requisição:**
-`http://localhost:3000/converter/USD/100`
 
-**Exemplo de Resposta (Sucesso - 200 OK):**
+```
+http://localhost:3000/converter/USD/100
+```
+
+**Resposta de Sucesso — `200 OK`:**
+
 ```json
 {
   "moedaOrigem": "USD",
@@ -33,12 +37,38 @@ Retorna a conversão de um valor específico da moeda desejada para o Real Brasi
   "taxaDeCambio": 5.12,
   "valorConvertido": 512.00
 }
+```
 
-´´´
-
-## ❌ Exemplo de Resposta (Erro - 400 Bad Request)
+**Resposta de Erro — `400 Bad Request`:**
 
 ```json
 {
   "erro": "Moeda inválida ou não suportada"
 }
+```
+
+## 💻 Como Rodar Localmente
+
+**1. Clone o repositório:**
+
+```bash
+git clone https://github.com/SEU_USUARIO/api-casa-de-cambio.git
+```
+
+**2. Instale as dependências:**
+
+```bash
+npm install
+```
+
+**3. Crie um arquivo `.env` na raiz do projeto:**
+
+```env
+PORTA_SERVIDOR=3000
+```
+
+**4. Inicie o servidor:**
+
+```bash
+npx ts-node server.ts
+```
