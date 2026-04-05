@@ -52,7 +52,7 @@ http://localhost:3000/converter/USD/100
 **1. Clone o repositório:**
 
 ```bash
-git clone https://github.com/SEU_USUARIO/api-casa-de-cambio.git
+git clone https://github.com/Lucaspaiva11/api-casa-de-cambio.git
 ```
 
 **2. Instale as dependências:**
