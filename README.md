@@ -34,6 +34,8 @@ Retorna a conversão de um valor específico da moeda desejada para o Real Brasi
   "valorConvertido": 512.00
 }
 
+´´´
+
 ## ❌ Exemplo de Resposta (Erro - 400 Bad Request)
 
 ```json
